@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require File.dirname(__FILE__) + '/../lib/twist'
+
+config_file = "#{ENV['HOME']}/.twistrc"
+
+if File.exists?(config_file)
+	config = File.read(config_file)
+	eval(config)
+end
+
+twist = Twist::Base(config)
+twist.run
