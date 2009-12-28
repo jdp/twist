@@ -42,9 +42,8 @@ count_statuses()
 #   new_tweets_paged_url [page]
 new_tweets_paged_url()
 {
-	local page base_url lastid
-	page=${1:-0}
-	base_url="${home_timeline}?page=${page}"
+	local base_url lastid
+	base_url="${home_timeline}?page=${1:-1}"
 	if [ -f ~/.twist/lastid ]; then
 		lastid=`cat ~/.twist/lastid`
 	fi
