@@ -1,0 +1,16 @@
+Twist is a shell script that allows you to read new tweets on the CLI.
+
+== Installation
+
+	$ curl http://github.com/jdp/twist/raw/master/twist.sh > ~/bin/twist
+	$ chmod +x ~/bin/twist
+	$ twist
+
+== Dependencies
+
+Twist relies on cURL and XMLStarlet, and they are both easily obtainable (if
+not already installed). cURL is on most package managers, and I know XMLStarlet
+is on Synaptic for sure.
+
+	cURL http://curl.haxx.se/
+	XMLStarlet http://xmlstar.sourceforge.net/
